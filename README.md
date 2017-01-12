@@ -11,4 +11,4 @@ Student Info
 =======================
 
 * Name: Nguyễn Vũ Hùng
-* ID: USTHBI6-061
+* ID:   USTHBI6-061

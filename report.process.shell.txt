@@ -1,0 +1,36 @@
+1/ ~$ ps -e
+  PID TTY          TIME CMD
+    1 ?        00:00:01 systemd
+    2 ?        00:00:00 kthreadd
+    3 ?        00:00:00 ksoftirqd/0
+    5 ?        00:00:00 kworker/0:0H
+    7 ?        00:00:00 rcu_sched
+    8 ?        00:00:00 rcu_bh
+    9 ?        00:00:00 migration/0
+   10 ?        00:00:00 watchdog/0
+
+2/ ~$ gnome-calculator
+
+3/ ~$ ps -e | grep gnome-cal
+ 6535 pts/4    00:00:00 gnome-calculato
+
+4/ ~$ cat /proc/6535/status
+Name:	gnome-calculato
+State:	S (sleeping)
+Tgid:	6535
+Ngid:	0
+Pid:	6535
+PPid:	6501
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+FDSize:	256
+
+5,6,7/ ~$ kill -STOP 6709 
+did with firefox and it turned black
+~$ kill -CONT 6709
+it became normal
+~$ kill -KILL 6709
+it shut down
+
+

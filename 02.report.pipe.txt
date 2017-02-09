@@ -1,0 +1,22 @@
+1/ hung@Tora:~$ ls -lR | grep list
+-rw-rw-r-- 1 hung hung  283 Th02 10 00:56 filelist
+-rw-rw-r-- 1 hung hung 2205 Th02 10 00:44 list porn
+
+2/ hung@Tora:~$ wc -l /etc/passwd
+40 /etc/passwd
+
+3/ hung@Tora:~$ free --total -m
+              total        used        free      shared  buff/cache   available
+Mem:           3008        1543         651          35         813        1254
+Swap:          3067           0        3067
+Total:         6076        1543        3719
+
+4/ hung@Tora:~$ cat /proc/cpuinfo | grep core
+core id		: 0
+cpu cores	: 1
+
+5/ hung@Tora:~$ find Pictures | grep jpg
+Pictures/index.jpg
+Pictures/Wallpapers/index.jpg
+
+
